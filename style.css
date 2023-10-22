@@ -11,12 +11,14 @@
     padding: 10px;
 }
 .todo-app {
-   width:100%;
-   max-width:540px;
+   width:300%;
+   max-width:1000px;
    background:#fff;
    margin:100px auto 20px;
    padding:40px 30px 70px;
    border-radius:10px;
+   display:flex;
+
 
 }
 .todo-app h2{
@@ -38,6 +40,7 @@
     border-radius:30px;
     padding-left:20px;
     margin-bottom:25px;
+
 }
 input{
     flex:1;
@@ -47,25 +50,26 @@ input{
     padding:10px;
     font-weight:14px;
 
+
 }
 button{
     border:none;
     outline:none;
-    padding:16px;
     background:#ff5945;
     color:#fff;
     font-size:16px;
     cursor:pointer;
     border-radius:40px;
+    padding:10px 20px 20px 30px;
 
 }
 ul li{
     list-style:none;
     font-size:17px;
-    padding:12px 8px 12px 50px;
     user-select:none;
     cursor:pointer;
     position: relative;
+   display: flex;
 }
 ul li::before{
     content:'';
@@ -78,10 +82,13 @@ ul li::before{
     background-position:center;
     top:12px;
     left:8px;
+    display:flex;
+   
 }
 ul li.checked{
     color:#555;
     text-decoration:line-through;
+    background:red;
 }
 ul li.checked::before{
     background-image:url(images/unchecked.png);
@@ -94,12 +101,17 @@ ul li span{
     width:40px;
     height:40px;
     font-size:22px;
-    color:#555;
+    color:black;
     line-height:40px;
     text-align:center;
     border-radius:50%;
+    margin:0px 60px 500px 0px;
+    display: flex;
+
 }
 ul li span:hover{
-    background:#edeef0;
-
+    background:red;
+}
+#list-container{
+    display:flex;
 }
